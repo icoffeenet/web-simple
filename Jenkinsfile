@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                babt 'docker build -t my-web-cicd .'
+                bat 'docker build -t my-web-cicd .'
             }
         }
         stage('Run Container') {
